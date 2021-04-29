@@ -21,4 +21,4 @@ app.use(express.urlencoded({ extended: true }));
 // routes
 app.use(routes);
 
-app.listen(3000, () => console.log("started server!"));
+app.listen(process.env.PORT || 3000, () => console.log("started server!"));
